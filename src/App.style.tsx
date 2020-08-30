@@ -19,23 +19,49 @@ export const Title = styled.div`
 `;
 
 export const SongListWrapper = styled.div`
-    height: 75%;
     grid-column: 1 / 3;
-    overflow-y: scroll;
-
-    p {
-        cursor: pointer;
+    padding: 10px 20px;
+    input{
+        margin-bottom: 10px;
+        width: 100%;
     }
     
-    p:hover{
-        color: aliceblue;
-        background: darkorchid;
+    Autocomplete{
+        max-width: 250px;
+    }
+    
+    .songTitle{
+        font-size: 20px;
+        padding: 10px 5px;
+        cursor: pointer;
     }
 
 `;
 
 export const YouTubePlayerWrapper = styled.div`
-    grid-column: 3 / -1;
+    grid-column: 3 / 10;
+    padding: 10px 50px;
 
 `;
 
+export const QoutesWrapper = styled.div`
+
+        margin-top:10px; 
+        overflow-y: scroll; 
+
+        span{
+            font-size: 20px;
+        }
+
+        .qoute{
+            cursor: pointer;
+            margin: 0px;
+            padding: 10px 5px;
+
+            :hover{
+                background: aquamarine;
+            }
+        }
+    
+
+`;

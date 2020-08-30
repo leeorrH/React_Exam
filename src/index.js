@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { SongsProvider } from './contexts/songs.provider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SongsProvider>
+      <App />
+    </SongsProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
